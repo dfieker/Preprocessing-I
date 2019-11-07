@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/index.less">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +14,77 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+      <header>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Work History</a>
+            <a href="#">Contact</a>
+          </nav>
+          <div class="Title">
+          <h1>Frodo Baggins - Web Developer</h1>
+          </div>
+      </header>
+      <section class="middle-content">
+        <div class="picture">
+          <img src="images/hobbiton.jpg" alt="Picture of a hobbit's house."/>
+        </div>
+        
+        <div class="intro">
+          <h2>My Capabilities</h2>
+          <p>Hey there friends. Frodo Baggins here. I'd love to be on your team. As you may know, I'm a hobbit who shows perseverance and loyalty. I love to have fun and I love working hard. I've spent many years recently refining my coding skills. I'm an expert in HTML, CSS, JavaScript, and Python. You won't be sorry for hiring me. Click the Contact link above or scroll down to see my contact information.</p>
+        </div>
+
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Bearing heavy burdens</li>
+            <li>Outlasting evil lords</li>
+          </ul>
+        </div>
+
+        <div class="work-history">
+          <h2>Work History</h2>
+            <div class="work-history-header">
+              <p>Years</p>
+              <p>Company</p>
+              <p>Title</p>
+            </div>
+
+            <div class="facebook">
+              <p>2</p>
+              <p>Facebook</p>
+              <p>Full Stack Developer</p>
+            </div>
+
+            <div class="sony">
+              <p>3</p>
+              <p>Sony</p>
+              <p>IT Tech</p>
+            </div>
+
+            <div class="bilbo-farm">
+              <p>25</p>
+              <p>Bilbo's Farm</p>
+              <p>Farmer</p>
+            </div>
+        </div>
+      </section>
+      
+      <section class="bottom-content">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>555-555-5555</p>
+        </div>
+
+        <footer>Copyright Frodo Baggins 2019</footer>
+      </section>
+  
+  </div>
 </body>
 </html>
