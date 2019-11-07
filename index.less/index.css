@@ -134,33 +134,18 @@ body {
   height: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
-  border: 1px solid orange;
+  border: 1px solid gray;
 }
 .container {
   margin: 0 auto;
   font-size: 1.6rem;
-  width: 80%;
-  padding-right: 5%;
-  padding-left: 5%;
+}
+img {
+  width: 10px;
+  height: auto;
 }
 .title {
-  display: flex;
   border: 3px solid red;
-  font-size: 6rem;
-  padding: 2%;
-  justify-content: center;
-}
-.picture img {
-  width: 70%;
-  height: 70vh;
-}
-.top-middle-content {
-  display: flex;
-}
-.intro #capabilities {
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 .topnav {
   display: flex;
@@ -169,7 +154,7 @@ body {
 }
 .topnav nav {
   display: flex;
-  width: 100%;
+  width: 70%;
   justify-content: space-around;
 }
 .topnav nav a {

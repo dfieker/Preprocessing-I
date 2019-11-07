@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	// border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -57,36 +57,65 @@ html, body {
 	height: 100%;
 	box-sizing: border-box;
 	font-size: 62.5%;
+	border: 1px solid orange;
 }
 
 .container {
-	display: flex;
-	max-width: 600px;
 	margin: 0 auto;
 	font-size: 1.6rem;
+	width: 80%;
+	padding-right: 5%;
+	padding-left: 5%;
 }
-header {
-	display: flex;
-	border: 1px solid orange;
-	justify-content: space-evenly;
-}
-img {
-	width: 10px;
-	height: auto;
-}
-.Title {
-	border: 3px solid red;
-}
-header nav {
+
+.title {
 	display: flex;
 	border: 3px solid red;
-	margin: 0;
-	width: 100%;
+	font-size: 6rem;
+	padding: 2%;
+	justify-content: center;
 }
+
+
+.picture img {
+	width: 70%;
+	height: 70vh;
+}
+
+
+.top-middle-content {
+	display: flex;
+}
+
+.intro {
+	border: 2px solid blue;
+}
+
+.intro #capabilities {
+	display: flex;
+	justify-content: center;
+
+
+.topnav {
+	display: flex;
+	justify-content: space-between;
+	padding: 2%;
+	nav {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}	
+	nav a {
+		color: gray;
+		text-decoration: none;
+	}
+}
+
+
 .contact {
 	display: flex;
 }
-}
+
 footer {
 	justify-content: center;;
 }
