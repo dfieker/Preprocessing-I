@@ -1,1 +1,207 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/*Variables*/
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('NanumMyeongjo'), url(https://fonts.gstatic.com/s/nanummyeongjo/v15/9Btx3DZF0dXLMZlywRbVRNhxy2LscnA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  border: 2px solid gold;
+}
+.container .top-content {
+  display: flex;
+  flex-direction: column;
+}
+.container .top-content nav {
+  display: flex;
+  width: 80%;
+  align-self: center;
+  border: 2px solid red;
+  justify-content: space-evenly;
+}
+.container .top-content nav a {
+  color: gray;
+  text-decoration: none;
+  border: 2px solid orange;
+}
+.container .top-content img {
+  align-self: center;
+  width: 60%;
+  height: 400px;
+}
+.container .top-content h1 {
+  align-self: center;
+  font-size: 2.4rem;
+}
+.container .middle-content {
+  font-family: 'Nanum Myeongjo', serif;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+}
+.container .middle-content .intro {
+  font-size: 1.2rem;
+  align-self: center;
+  width: 80%;
+  border: 2px solid red;
+}
+.container .middle-content .skills-content {
+  display: flex;
+  justify-content: space-between;
+}
+.container .middle-content .skills-content img {
+  width: 40%;
+  height: 300px;
+}
+.container .middle-content .skills-content .skills {
+  border: 2px solid blue;
+  width: 40%;
+}
+.container .middle-content .skills-content .skills h2 {
+  font-size: 2rem;
+  padding-top: 15%;
+}
+.container .middle-content .skills-content .skills ul {
+  list-style-type: square;
+  padding-left: 5%;
+}
