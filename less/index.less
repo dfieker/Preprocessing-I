@@ -49,11 +49,265 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+/*Variables*/
+@font-h2: 2.4rem;
+@font-text: 1.2rem;
+@font-color: gray;
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@fontfam: 'Nanum Myeongjo', serif;
+
+
+/*Mixins*/
+.center() {
+	display: flex;
+	justify-content: center;
+}
+
+.border() {
+	border: 2px solid gray;
+}
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
 }
 
 html, body {
     height: 100%;
 }
 
+.container {
+	width: 900px;
+	margin: 0 auto;
+	@media (max-width: 500px) {
+		width: 100%;
+	}
+	
+	.top-content {
+		display: flex;
+		flex-direction: column;
+		nav {
+			display: flex;
+			width: 100%;
+			align-self: center;
+			justify-content: space-between;
+			padding: 2% 0 3% 0;
+			@media (max-width: 500px) {
+				justify-content: space-evenly;
+			}
+			a {
+				color: @font-color;
+				text-decoration: none;
+				
+			}
+		}
+		img {
+			align-self: center;
+			width: 60%;
+			height: 400px;
+			@media (max-width: 500px) {
+				width: 100%;
+			}
+		}
+		h1 {
+			align-self: center;
+			font-size: @font-h2;
+			padding: 2% 0 2% 0;
+			@media (max-width: 500px) {
+				text-align: center;
+			}
+		}
+	}
+	.middle-content {
+		font-family: @fontfam;
+		display: flex;
+		flex-direction: column;
+		
+		background-color: lightgray;
+		.intro {
+			font-size: @font-text;
+			align-self: center;
+			width: 80%;
+			padding: 2%;
+		}
+
+		.skills-content {
+			display: flex;
+			justify-content: space-between;
+			@media (max-width: 500px) {
+				flex-direction: column;
+			}
+			img {
+				width: 40%;
+				height: 300px;
+				padding: 0 0 2% 2%;
+				@media (max-width: 500px) {
+					width: 80%;
+					align-self: center;
+					padding: 2% 0 0 0;
+				}
+			}
+			.skills {
+				width: 40%;
+				@media (max-width: 500px) {
+					align-self: center;
+					width: 80%;
+				}
+				h2 {
+					font-size: 2rem;
+					padding-top: 8%;
+					width: 40%;
+				@media (max-width: 500px) {
+					width: 100%;
+					text-align: center;
+				}
+				}
+				ul {
+					list-style-type: square;
+					padding-left: 5%;
+					@media (max-width: 500px) {
+						display: flex;
+						flex-direction: column;
+						margin-left: 40%;
+						width: 50%;
+					}
+				}
+			}
+		}
+		.work-history {
+			padding: 2% 0 2% 2%;
+			line-height: 3;
+			.border(); 
+			@media (max-width: 500px) {
+				margin-top: 4%;
+			}
+			h2 {
+				font-size: 1.6rem;
+				margin-top: -3%;
+			}
+			.work-history-titles {
+				display: flex;
+				justify-content: space-between;
+				width: 60%;
+				background-color: #EAEDEB; 
+				@media (max-width: 500px) {
+					
+					width: 100%;
+				}
+				.span1 {
+					font-weight: 900;
+				}
+				.span2 {
+					font-weight: bold;
+					margin-right: 30%;
+					@media (max-width: 500px) {
+						padding-left: 10%;
+					}
+				}
+				.span3 {
+					font-weight: bold;
+					margin-right: 21.77%;
+					@media (max-width: 500px) {
+						padding-right: 5%;
+					}
+				}
+			}
+			.work-history-line1 {
+				display: flex;
+				justify-content: space-between;
+				width: 60%;
+				@media (max-width: 500px) {
+					
+					width: 100%;
+				}
+				.span4 {
+					font-weight: bold;
+				}
+				.span5 {
+					padding-right: 24.35%;
+					@media (max-width: 500px) {
+						padding-right: 14%;
+					}
+				}
+				.span6 {
+					@media (max-width: 500px) {
+						padding-right: 2.5%;
+					}
+				}
+			}
+			.work-history-line2 {
+				display: flex;
+				justify-content: space-between;
+				width: 60%;
+				background-color: #EAEDEB;
+				@media (max-width: 500px) {
+					
+					width: 100%;
+				}
+				.span7 {
+					font-weight: bold;
+				}
+				.span8 {
+					padding-right: 31.05%;
+					@media (max-width: 500px) {
+						padding-right: 21%;
+					}
+				}
+				.span9 {
+					padding-right: 17.3%;
+					@media (max-width: 500px) {
+						padding-right: 21.75%;
+					}
+				}
+			}
+			.work-history-line3 {
+				display: flex;
+				justify-content: space-between;
+				width: 60%;
+				@media (max-width: 500px) {
+					
+					width: 100%;
+				}
+				.span10 {
+					font-weight: bold;
+				}
+				.span11 {
+					padding-right: 22.6%;
+					@media (max-width: 500px) {
+						padding-right: 12%;
+					}
+				}
+				.span12 {
+					padding-right: 18.2%;
+					@media (max-width: 500px) {
+						padding-right: 22.7%;
+					}
+				}
+			}
+		}
+	}
+
+	.bottom-content {
+		padding: 2% 0 5% 2%;
+		h2 {
+			font-size: 1.4rem;
+			margin-bottom: 1%;
+			@media (max-width: 500px) {
+				.center();
+				padding-top: 5%;
+			}
+		}
+		p {
+			line-height: 1.5;
+			@media (max-width: 500px) {
+				.center();
+			}
+		}
+	}
+
+	footer {
+		.center();
+		margin-bottom: 2%;
+	}
+}
