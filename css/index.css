@@ -135,6 +135,7 @@ table {
   font-display: swap;
   src: local('NanumMyeongjo'), url(https://fonts.gstatic.com/s/nanummyeongjo/v15/9Btx3DZF0dXLMZlywRbVRNhxy2LscnA.ttf) format('truetype');
 }
+/*Mixins*/
 * {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -146,7 +147,11 @@ body {
 .container {
   width: 900px;
   margin: 0 auto;
-  border: 2px solid gold;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
 }
 .container .top-content {
   display: flex;
@@ -154,54 +159,261 @@ body {
 }
 .container .top-content nav {
   display: flex;
-  width: 80%;
+  width: 100%;
   align-self: center;
-  border: 2px solid red;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 2% 0 3% 0;
+}
+@media (max-width: 500px) {
+  .container .top-content nav {
+    justify-content: space-evenly;
+  }
 }
 .container .top-content nav a {
   color: gray;
   text-decoration: none;
-  border: 2px solid orange;
 }
 .container .top-content img {
   align-self: center;
   width: 60%;
   height: 400px;
 }
+@media (max-width: 500px) {
+  .container .top-content img {
+    width: 100%;
+  }
+}
 .container .top-content h1 {
   align-self: center;
   font-size: 2.4rem;
+  padding: 2% 0 2% 0;
+}
+@media (max-width: 500px) {
+  .container .top-content h1 {
+    text-align: center;
+  }
 }
 .container .middle-content {
   font-family: 'Nanum Myeongjo', serif;
   display: flex;
   flex-direction: column;
-  border: 2px solid gray;
+  background-color: lightgray;
 }
 .container .middle-content .intro {
   font-size: 1.2rem;
   align-self: center;
   width: 80%;
-  border: 2px solid red;
+  padding: 2%;
 }
 .container .middle-content .skills-content {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container .middle-content .skills-content {
+    flex-direction: column;
+  }
+}
 .container .middle-content .skills-content img {
   width: 40%;
   height: 300px;
+  padding: 0 0 2% 2%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .skills-content img {
+    width: 80%;
+    align-self: center;
+    padding: 2% 0 0 0;
+  }
 }
 .container .middle-content .skills-content .skills {
-  border: 2px solid blue;
   width: 40%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .skills-content .skills {
+    align-self: center;
+    width: 80%;
+  }
 }
 .container .middle-content .skills-content .skills h2 {
   font-size: 2rem;
-  padding-top: 15%;
+  padding-top: 8%;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .skills-content .skills h2 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .container .middle-content .skills-content .skills ul {
   list-style-type: square;
   padding-left: 5%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .skills-content .skills ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40%;
+    width: 50%;
+  }
+}
+.container .middle-content .work-history {
+  padding: 2% 0 2% 2%;
+  line-height: 3;
+  border: 2px solid gray;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history {
+    margin-top: 4%;
+  }
+}
+.container .middle-content .work-history h2 {
+  font-size: 1.6rem;
+  margin-top: -3%;
+}
+.container .middle-content .work-history .work-history-titles {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  background-color: #EAEDEB;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-titles {
+    width: 100%;
+  }
+}
+.container .middle-content .work-history .work-history-titles .span1 {
+  font-weight: 900;
+}
+.container .middle-content .work-history .work-history-titles .span2 {
+  font-weight: bold;
+  margin-right: 30%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-titles .span2 {
+    padding-left: 10%;
+  }
+}
+.container .middle-content .work-history .work-history-titles .span3 {
+  font-weight: bold;
+  margin-right: 21.77%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-titles .span3 {
+    padding-right: 5%;
+  }
+}
+.container .middle-content .work-history .work-history-line1 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line1 {
+    width: 100%;
+  }
+}
+.container .middle-content .work-history .work-history-line1 .span4 {
+  font-weight: bold;
+}
+.container .middle-content .work-history .work-history-line1 .span5 {
+  padding-right: 24.35%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line1 .span5 {
+    padding-right: 14%;
+  }
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line1 .span6 {
+    padding-right: 2.5%;
+  }
+}
+.container .middle-content .work-history .work-history-line2 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  background-color: #EAEDEB;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line2 {
+    width: 100%;
+  }
+}
+.container .middle-content .work-history .work-history-line2 .span7 {
+  font-weight: bold;
+}
+.container .middle-content .work-history .work-history-line2 .span8 {
+  padding-right: 31.05%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line2 .span8 {
+    padding-right: 21%;
+  }
+}
+.container .middle-content .work-history .work-history-line2 .span9 {
+  padding-right: 17.3%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line2 .span9 {
+    padding-right: 21.75%;
+  }
+}
+.container .middle-content .work-history .work-history-line3 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line3 {
+    width: 100%;
+  }
+}
+.container .middle-content .work-history .work-history-line3 .span10 {
+  font-weight: bold;
+}
+.container .middle-content .work-history .work-history-line3 .span11 {
+  padding-right: 22.6%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line3 .span11 {
+    padding-right: 12%;
+  }
+}
+.container .middle-content .work-history .work-history-line3 .span12 {
+  padding-right: 18.2%;
+}
+@media (max-width: 500px) {
+  .container .middle-content .work-history .work-history-line3 .span12 {
+    padding-right: 22.7%;
+  }
+}
+.container .bottom-content {
+  padding: 2% 0 5% 2%;
+}
+.container .bottom-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .container .bottom-content h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+  }
+}
+.container .bottom-content p {
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .container .bottom-content p {
+    display: flex;
+    justify-content: center;
+  }
+}
+.container footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
 }
